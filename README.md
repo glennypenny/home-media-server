@@ -3,8 +3,7 @@
 A self-hosted, LAN-only media server for a family: torrents downloaded via a
 Discord bot land in a shared folder, Samba exposes that folder to devices on
 the network, and Jellyfin streams it to TVs, phones and tablets. The system
-runs on a repurposed HP Omen 15 laptop running Ubuntu Desktop 24.04 LTS with
-the GUI disabled.
+runs on a repurposed HP Omen 15 laptop running Ubuntu Desktop 24.04 LTS.
 
 The whole stack is deliberately **not exposed to the internet**. The only
 out-of-LAN entry point is a Discord bot restricted to a hard-coded list of
