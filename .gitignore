@@ -16,3 +16,4 @@ Thumbs.db
 
 # Docker leftovers
 *.tar
+github-token.txt
