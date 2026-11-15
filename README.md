@@ -9,6 +9,9 @@ The whole stack is deliberately **not exposed to the internet**. The only
 out-of-LAN entry point is a Discord bot restricted to a hard-coded list of
 user IDs.
 
+**New here? Start with [INSTALL.md](INSTALL.md)** — a complete step-by-step
+guide from fresh Ubuntu install to a working bot.
+
 ## Architecture
 LAN only (your_ip)
 │
