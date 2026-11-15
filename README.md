@@ -11,7 +11,7 @@ out-of-LAN entry point is a Discord bot restricted to a hard-coded list of
 user IDs.
 
 ## Architecture
-LAN only (192.168.28.0/24)
+LAN only (your_ip)
 │
 You (mobile) ──Discord──▶ Discord bot (Docker) ──▶ qBittorrent (AppImage)
 │
