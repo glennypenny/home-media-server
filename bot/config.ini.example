@@ -1,0 +1,15 @@
+[Bot]
+# Change to your bot token and server (guild) ID.
+# Bot token: https://discord.com/developers/applications -> your app -> Bot -> Reset Token
+# Guild ID: right-click your server name in Discord -> Copy Server ID (Developer Mode must be on).
+token = ENTER_YOUR_TOKEN_HERE
+guild_id = ENTER_GUILD_ID_HERE
+
+[qbit]
+# Change to your qBittorrent host and port. Should look like http://host_ip:port
+# or http://host.docker.internal:8080 if using Docker.
+# For this setup (qBittorrent on the host, bot in Docker): use the host's LAN IP.
+host = http://YOUR_SERVER_IP:8080
+# qBittorrent Web UI login credentials (Tools -> Options -> Web UI).
+user = YOUR_USER
+pass = YOUR_PASSWORD

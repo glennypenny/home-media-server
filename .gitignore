@@ -1,0 +1,18 @@
+# Real credentials — never commit
+config.ini
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# Logs and OS noise
+*.log
+.DS_Store
+Thumbs.db
+
+# Docker leftovers
+*.tar

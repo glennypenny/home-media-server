@@ -1,0 +1,30 @@
+# Sanitised excerpt of this server's Samba configuration.
+# Full system file is /etc/samba/smb.conf on the host; the [sambashare]
+# section below is created as a usershare and is stored under
+# /var/lib/samba/usershares/. It appears in `testparm -s` output as shown.
+
+[global]
+    log file = /var/log/samba/log.%m
+    logging = file
+    map to guest = Bad User
+    max log size = 1000
+    obey pam restrictions = Yes
+    pam password change = Yes
+    panic action = /usr/share/samba/panic-action %d
+    passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+    passwd program = /usr/bin/passwd %u
+    server role = standalone server
+    server string = %h server (Samba, Ubuntu)
+    unix password sync = Yes
+    usershare allow guests = Yes
+    usershare owner only = No
+    idmap config * : backend = tdb
+
+[sambashare]
+    comment = Samba on Ubuntu
+    create mask = 0664
+    directory mask = 0775
+    path = /srv/samba/share/sambashare
+    read only = No
+    valid users = glen
+    write list = glen
